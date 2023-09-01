@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Welcome bro...
+        </title>
+    </head>
+    <body bgcolor="lavender">
+        Enter string1<input type="text" id="hi"><br><br>
+        Enter string2<input type="text" id="bi"><br>
+        <button onclick="myfun()">Submit</button>
+        <button onclick="notmyfun()">Reset</button>
+
+        <script>
+            function myfun(){
+            var t=document.getElementById('hi').value;
+            var tt=document.getElementById('bi').value;
+            var c=t.concat("",tt);
+            alert(c);
+            }
+            function notmyfun(){
+                document.getElementById('hi').value="";
+                document.getElementById('bi').value="";
+            }
+        </script>
+        
+
+
+    </body>
+</html>
